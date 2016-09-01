@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relatively"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d15400"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/radio_question1"
+                style="@style/QuestionTextStyle"
+                android:text="Capital city with the highest population" />
+
+            <RadioGroup
+                android:id="@+id/question1_radioGroup"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    style="@style/AnswerTextStyle"
+                    android:text="New Delhi" />
+
+                <RadioButton
+                    android:id="@+id/question1_answer"
+                    style="@style/AnswerTextStyle"
+                    android:text="Tokyo" />
+
+                <RadioButton
+                    style="@style/AnswerTextStyle"
+                    android:text="New York" />
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/radio_question2"
+                style="@style/QuestionTextStyle"
+                android:text="Smallest country in the world" />
+
+            <RadioGroup
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    style="@style/AnswerTextStyle"
+                    android:text="Singapore" />
+
+                <RadioButton
+                    android:id="@+id/question2_answer"
+                    style="@style/AnswerTextStyle"
+                    android:text="Vatican" />
+
+                <RadioButton
+                    style="@style/AnswerTextStyle"
+                    android:text="Malta" />
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/radio_question3"
+                style="@style/QuestionTextStyle"
+                android:text="Largest sea in the world" />
+
+            <RadioGroup
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    style="@style/AnswerTextStyle"
+                    android:text="South China Sea" />
+
+                <RadioButton
+                    android:id="@+id/question3_answer"
+                    style="@style/AnswerTextStyle"
+                    android:text=" Philipine Sea" />
+
+                <RadioButton
+                    style="@style/AnswerTextStyle"
+                    android:text="Greenland Sea" />
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/radio_question4"
+                style="@style/QuestionTextStyle"
+                android:text="Which of the following is not a country?" />
+
+            <CheckBox
+                android:id="@+id/question4_opt1"
+                style="@style/CheckBoxTextStyle"
+                android:text="Bhutan" />
+
+            <CheckBox
+                android:id="@+id/question4_opt2"
+                style="@style/CheckBoxTextStyle"
+                android:text="Delaware" />
+
+            <CheckBox
+                android:id="@+id/question4_opt3"
+                style="@style/CheckBoxTextStyle"
+                android:text="Taipei" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/radio_question5"
+                style="@style/QuestionTextStyle"
+                android:text="Who is the founder of Udacity?" />
+
+            <EditText
+                android:id="@+id/founder_name"
+                style="@style/EditTextStyle"
+                android:hint="Answer Here"
+                android:inputType="textCapWords" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                style="@style/submitButton"
+                android:text="Submit"
+                android:onClick="onSubmitClicked"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>
